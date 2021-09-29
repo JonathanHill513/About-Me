@@ -12,7 +12,7 @@
             justify-content: center;
             background-image: url(photos/smile.png);
             background-position: center;
-            background-size: 45px;
+            background-size: 90px;
             padding: 50px;
         }
 
@@ -22,18 +22,23 @@
             border-top-left-radius: 10%;
             border-top-right-radius: 10%;
         }
-        h2{
+        h3{
             background-color: #00aadd;
             padding: 20px;
         }
         h2{
             background-color: #0000ff;
             padding: 20px;
+            font-family:serif, monospace;
         }
         h1{
             background-color: #0000ff;
             padding: 20px;
-
+            font-weight: 900;
+            font-family:serif, monospace;
+            font-size:45px;
+            border-top-left-radius: 10%;
+            border-top-right-radius: 10%;
         }
         .link{
             padding: 20px;
@@ -62,19 +67,40 @@
         }
 
         ul{
-           font-family: cursive;
+           font-family: Arial;
            
         }
 
         .nav-bar{
-            text-align: center;
-            align-content: center;
-            align-items: center;
             padding:20px;
-            background-color: #000000;
-            padding-inline: 20px;
+            background-color: cyan;
+            margin:auto;
+            text-align: center;
+            position:relative;
         }
-
+        .input{
+            float:right;
+            position:fixed;
+            right:1px;
+            bottom:1px;
+            background-color: blue;
+            padding: 10px;
+            border-radius:20% 0% 0% 20%;
+            border: 5px groove white;
+            box-shadow: black 20px 20px 20px 20px;
+        }
+        img{
+            border:blue 10px groove;
+            border-radius:50%;
+            width: 610px;
+            height:309px;
+        }
+        a:hover{
+            background-color:white;
+        }
+        a:active{
+            background-color:purple;
+        }
 
     </style>
 
@@ -88,7 +114,15 @@
     <div class="wrapper">
 <div class="b2">
 
+<div class="nav-bar">
 
+
+    <a href="./jobs.html">Jobs</a>
+
+    
+    <a href="./index.html">About Me</a>
+
+</div>
 <div class="header">
     <div class="name">
     <h1>Education<br>
@@ -100,15 +134,7 @@
     <h2>DePaul Cristo Rey High School</h2>
 </div>
 
-<div class="nav-bar">
 
-
-    <a href="./jobs.html">Jobs</a>
-
-    
-    <a href="./index.html">About Me</a>
-
-</div>
 <div class="lists">
 <h2>Academic Achievements</h2>
     <ul>
@@ -133,6 +159,14 @@
 </div>
 </div>
 </div>
+</div>
+<div class="input">
+    <p>Insert Thoughts Below!</p>
+<form action="https://www.freecatphotoapp.com/" target="_blank">
+    <input type="text" placeholder="Tell me something..." required>
+    <button type="submit" >Submit</button>
+</form>
+
 </div>
 </body>
 </html>
